@@ -5,8 +5,7 @@
   <span>{{ item.price | currency }}</span>
 </div> -->
 
-<div class="cart-item" *ngFor="let item of items" class="card ms-3 float-start col-4" class="productbox"
-    style="width:fit-content">
+<div class="cart-item" *ngFor="let item of items" class="card ms-3 float-start col-4" class="productbox" style="width:fit-content">
     <img [src]="item.imageUrl" class="rounded mx-auto d-block col-9" alt="...">
     <div class="card-body mx-auto">
         <h5 class="card-title mx-auto">{{item.name}} {{item.price | currency:'USD':'symbol'}}</h5>
