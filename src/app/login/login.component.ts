@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { AccountService } from '../services/account.service';
 import { User } from './user';
+import { Router } from '@angular/router';
+// import { SweetalertService } from '../services/sweetalert.service';
 
 @Component({
   selector: 'pm-login',
@@ -11,7 +13,8 @@ import { User } from './user';
 export class LoginComponent implements OnInit {
 
   model:User=new User();
-  constructor(private accountService: AccountService) { }
+  constructor(private accountService: AccountService,
+    private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -22,7 +25,11 @@ export class LoginComponent implements OnInit {
 
   }
 
+  // alert(){
+  //   // this.sweetalertService.success("Giriş işlemi başarılı");
+  //   this.router.navigate(["products"]);
 
+  // }
 
 }
 

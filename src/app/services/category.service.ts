@@ -5,7 +5,6 @@ import { Observable, throwError  } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
 
 @Injectable()
-
 export class CategoryService {
 
   constructor(private http: HttpClient) { }

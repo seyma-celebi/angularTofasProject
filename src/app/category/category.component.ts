@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AlertifyService } from '../services/alertify.service';
+// import { AlertifyService } from '../services/alertify.service';
 import { CategoryService } from '../services/category.service';
 import { Category } from './category';
 

@@ -4,6 +4,7 @@ import { AlertifyService } from '../services/alertify.service';
 import { ProductService } from '../services/product.service';
 import { ActivatedRoute } from '@angular/router';
 import { __param } from 'tslib';
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'pm-product',
@@ -18,7 +19,8 @@ export class ProductComponent implements OnInit {
   constructor(
     private alertifyService: AlertifyService,
     private productService: ProductService,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private cartService: CartService
   ) { }
 
   title = "Ürün Listesi";
@@ -26,9 +28,10 @@ export class ProductComponent implements OnInit {
   products: Product[];
 
 
-  addToCard(product) {
+  addToCard(product: Product) {
     //alert(product.name + " Sepete eklendi!")
     //alertify.success(product.name + " added!")
+    this.cartService.addToCart(product);
     this.alertifyService.success(product.name + " added")
   }
 

@@ -14,6 +14,9 @@ import { ProductAddForms2Component } from './product/product-add-forms2/product-
 import { LoginComponent } from './login/login.component';
 import { AccountService } from './services/account.service';
 import { LoginGuard } from './login/login.guard';
+import { CartComponent } from './cart/cart.component';
+import { CartService } from './services/cart.service';
+import { BlogComponent } from './text/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,9 @@ import { LoginGuard } from './login/login.guard';
     ProductFilterPipe,
     ProductAddForms1Component,
     ProductAddForms2Component,
-    LoginComponent
+    LoginComponent,
+    CartComponent,
+    BlogComponent
 
   ],
   
@@ -38,7 +43,7 @@ import { LoginGuard } from './login/login.guard';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [AlertifyService, AccountService, LoginGuard], //bu şekilde eklemem alertify ın global bir servis olduğunu belirtiyor.
+  providers: [AlertifyService, AccountService, LoginGuard, CartService], //bu şekilde eklemem alertify ın global bir servis olduğunu belirtiyor.
   bootstrap: [AppComponent]//bu uygulama bu componentten başlar demek
   //yani bu uygulama appcomponentten başlar
 })

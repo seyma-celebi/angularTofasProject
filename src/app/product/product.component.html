@@ -1,32 +1,29 @@
 <!-- <h3 *ngIf="products; else noProduct"> {{title}}</h3> -->
 <pm-category></pm-category>
 <div class="form-group my-4 ">
-  <input 
-    class="form-control"
-    id="productName"
-    placeholder="Arama metnini giriniz"
-    [(ngModel)]= "filterText"
-  />
-  <small *ngIf="filterText" class="form-text text-muted">Şu an <strong>{{filterText}}</strong> aradınız.</small>
+  <input class="form-control" id="productName" placeholder="Enter search text" [(ngModel)]="filterText" />
+  <small *ngIf="filterText" class="form-text text-muted">You searched for <strong>{{filterText}}</strong></small>
 </div>
 
 <div class="row">
   <ng-template #noProduct>
     <div class="alert alert-primary" role="alert">
-      Bu kategoride ürün yoktur!
+      There are no products in this category!
     </div>
   </ng-template>
 
-  
-  <div *ngFor="let product of products | productFilter:filterText" class="card ms-3 float-start col-4" class="productbox"  style="width:fit-content">
+
+  <div *ngFor="let product of products | productFilter:filterText" class="card ms-3 float-start col-4"
+    class="productbox" style="width:fit-content">
     <img [src]="product.imageUrl" class="rounded mx-auto d-block col-9" alt="...">
     <div class="card-body mx-auto">
-      <h5 class="card-title mx-auto">{{product.name}} {{product.price | currency:'USD':'symbol'}}</h5>
+      <h5 class="card-title mx-auto">{{product.name}} {{product.price | currency:'TR ':'symbol'}}</h5>
       <p class="card-text">
-          {{product.description | uppercase}} 
-          <!-- "| uppercase" "| lowercase" yapısına pipe denir -->
+        {{product.description | uppercase}}
+        <!-- "| uppercase" "| lowercase" yapısına pipe denir -->
       </p>
-      <a (click)="addToCard(product)" class="btn btn-primary">Sepete Ekle </a>
+
+      <!-- <a (click)="addToCard(product)" class="btn btn-primary">Add to Cart </a> -->
+      <button (click)="addToCard(product)" class="btn btn-primary">Add to Cart </button>
     </div>
   </div>
-

@@ -54,20 +54,22 @@
 <main class="form-signin w-100 m-auto">
   <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
     <img class="mb-4 center-image" src="tofas.ico" alt="" width="72" height="57">
-    <h1 class="h3 mb-3 fw-normal">Sistem Girişi</h1>
+    <h1 class="h3 mb-3 fw-normal">Login</h1>
 
     <div class="form-floating">
-      <input type="text" #userName="ngModel" [(ngModel)]="model.userName" class="form-control" id="userName" name="userName" placeholder="Kullanıcı Adı" required autofocus>
-      <label for="floatingInput">Kullanıcı Adı</label>
+      <input type="text" #userName="ngModel" [(ngModel)]="model.userName" class="form-control" id="userName" name="userName" placeholder="userName" required autofocus>
+      <label for="floatingInput">Username</label>
     </div>
     <div class="form-floating">
-      <input type="password" #password="ngModel" [(ngModel)]="model.password" class="form-control" id="password" name="password" placeholder="Şifre" required autofocus>
-      <label for="floatingPassword">Şifre</label>
+      <input type="password" #password="ngModel" [(ngModel)]="model.password" class="form-control" id="password" name="password" placeholder="password" required autofocus>
+      <label for="floatingPassword">Password</label>
     </div>
 
-    <button class="btn btn-primary w-100 py-2" type="submit">Giriş</button>
+    <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
     <p class="mt-5 mb-3 text-body-secondary">&copy; 2023–2024</p>
   </form>
 </main>
+
+<!-- (click)="alert()" -->
 
 
