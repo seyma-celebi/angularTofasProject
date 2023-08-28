@@ -1,19 +1,174 @@
 {
-  "posts": [
+  "products": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "Egea",
+      "price": 1350000,
+      "categoryId": 1,
+      "description": "SEDAN",
+      "imageUrl": "https://otomobil.fiat.com.tr/content/dam/fiat/TR/my-23/tipo/tipo-sedan/coloris/okyanus-mavisi/680x430.png"
+    },
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "Egea Cross",
+      "price": 140000,
+      "categoryId": 1,
+      "description": "CROSS LOUNGE",
+      "imageUrl": "https://otomobil.fiat.com.tr/content/dam/fiat/TR/my-23/tipo/tipo-cross/colors/paprika-turuncu/680x430.png"
+    },
+    {
+      "id": 1,
+      "name": "Egea Cross",
+      "price": 150000,
+      "categoryId": 1,
+      "description": "CROSS WAGON",
+      "imageUrl": "https://otomobil.fiat.com.tr/content/dam/fiat/TR/my-23/tipo/tipo-crosswagon/colorizer/bulut-beyaz%C4%B1/rev/680x430_02.png"
+    },
+    {
+      "id": 1,
+      "name": "FIAT PANDA",
+      "price": 500000,
+      "categoryId": 1,
+      "description": "PANDA",
+      "imageUrl": "https://otomobil.fiat.com.tr/content/dam/fiat/TR/models/panda-cross/panda-color/680x430.png"
+    },
+    {
+      "id": 1,
+      "name": "500e",
+      "price": 750000,
+      "categoryId": 1,
+      "description": "YENİ FIAT 500e Hatchback",
+      "imageUrl": "https://otomobil.fiat.com.tr/content/dam/fiat/com/my23/500bev/colorizer/hb/green/New500-Hatchback-figurini-colorizer-Ocean-Green-desktop-680x430.png"
+    },
+    {
+      "id": 1,
+      "name": "500e",
+      "price": 2500,
+      "categoryId": 1,
+      "description": "YENİ FIAT 500e 3+1",
+      "imageUrl": "https://otomobil.fiat.com.tr/content/dam/fiat/com/my23/500bev/colorizer/3-1/pink/New500-3+1-figurini-colorizer-Rose-Gold-desktop-680x430.png"
+    },
+    {
+      "id": 1,
+      "name": "500e",
+      "price": 2500,
+      "categoryId": 1,
+      "description": "YENİ FIAT 500e Cabrio",
+      "imageUrl": "https://otomobil.fiat.com.tr/content/dam/fiat/com/my23/500bev/colorizer/cabrio/blu/New500-Cabrio-figurini-colorizer-Celestial-Blue-desktop-680x430.png"
+    },
+    {
+      "id": 2,
+      "name": "Scudo",
+      "price": 908100,
+      "categoryId": 2,
+      "description": "SCUDO VAN MAX",
+      "imageUrl": "https://www.fiatprofessional.com/content/dam/fiatprofessional/tr/gamma/scudo/renkler/buz-beyazi/rev/Scudo-Colorizer--BiancoBanquise-desktop-730x575.png"
+    },
+    {
+      "id": 2,
+      "name": "Ulysse",
+      "price": 1299300,
+      "categoryId": 2,
+      "description": "8+1 EV KONFORUNDA",
+      "imageUrl": "https://www.fiatprofessional.com/content/dam/fiatprofessional/tr/gamma/ulysse/renkler/inci-siyahi/rev/465x384_siyah.png"
+    },
+    {
+      "id": 2,
+      "name": "Doblo",
+      "price": 660000,
+      "categoryId": 2,
+      "description": "SCUDO VAN MAX",
+      "imageUrl": "https://www.fiatprofessional.com/content/dam/fiatprofessional/tr/gamma/combi/renkler/akdeniz-mavisi/E-Doblo-top-mediterraneo-blu-desktop-730x575.png"
+    },
+    {
+      "id": 2,
+      "name": "Fiorino",
+      "price": 503800,
+      "categoryId": 2,
+      "description": "FIORINO CARGO/COMBI",
+      "imageUrl": "https://www.fiatprofessional.com/content/dam/fiatprofessional/tr/modeller/doblo-combi/2021/dis-tasarim/v2/arctic_whiteness.png"
+    },
+    {
+      "id": 2,
+      "name": "Ducato",
+      "price": 979100,
+      "categoryId": 2,
+      "description": "DUCATO VAN",
+      "imageUrl": "https://www.fiatprofessional.com/content/dam/fiatprofessional/tr/modeller/ducato-van/dis-tasarim/v2/arctic_white.png"
+    },
+    {
+      "id": 3,
+      "name": "Tonale",
+      "price": 979100,
+      "categoryId": 3,
+      "description": "PHEV Veloce",
+      "imageUrl": "https://www.alfaromeo.nl/content/dam/alfa/cross/tonale-plug-in-hybrid/trim/trim-image/AR-Home-Trim-Tonale-PHEV-Veloce.png"
+    },
+    {
+      "id": 3,
+      "name": "Tonale",
+      "price": 979100,
+      "categoryId": 3,
+      "description": "VELOCE",
+      "imageUrl": "https://www.alfaromeo.com.tr/content/dam/alfa/com/tonale-mp/trim/Trim-Tonale_Veloce.png"
+    },
+    {
+      "id": 3,
+      "name": "Stelvio",
+      "price": 979100,
+      "categoryId": 3,
+      "description": "VELOCE",
+      "imageUrl": "https://www.alfaromeo.nl/content/dam/alfa/nl/stelvio-mp/trim/normal-trim/Stelvio_Veloce_3_4_rossa.png"
+    },
+    {
+      "id": 3,
+      "name": "Giulina",
+      "price": 979100,
+      "categoryId": 3,
+      "description": "VELOCE",
+      "imageUrl": "https://www.alfaromeo.nl/content/dam/alfa/nl/giulia-mp/trim/normal-trim/GIULIA_MCA_VELOCE_rossa.png"
+    },
+    {
+      "id": 4,
+      "name": "JEEP",
+      "price": 979100,
+      "categoryId": 4,
+      "description": "LONGITUDE",
+      "imageUrl": "https://www.jeep.com.tr/content/dam/jeep/crossmarket/model/compass-mhev-my-22/overview/trim/longitude/Jeep-Compass-eHybrid-Longitude-ColoradoRed-565x330.png"
+    },
+    {
+      "id": 4,
+      "name": "JEEP",
+      "price": 979100,
+      "categoryId": 4,
+      "description": "LIMITED",
+      "imageUrl": "https://www.jeep.com.tr/content/dam/jeep/crossmarket/model/compass-mhev-my-22/overview/trim/limited/Jeep-Compass-eHybrid-Limited-BluShade-565x330.png"
+    },
+    {
+      "id": 4,
+      "name": "JEEP",
+      "price": 979100,
+      "categoryId": 4,
+      "description": "S-LIMITED",
+      "imageUrl": "https://www.jeep.com.tr/content/dam/jeep/crossmarket/compass-my-23/compass-4xe/overview/trim/trim-s/figurines/Jeep_Compass_4xe_S_SolidBlack_565x330.png"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "categories": [
+    {
+      "id": 1,
+      "name": "Fiat"
+    },
+    {
+      "id": 2,
+      "name": "Fiat Professional"
+    },
+    {
+      "id": 3,
+      "name": "Alfa Romeo"
+    },
+    {
+      "id": 4,
+      "name": "Jeep"
+    }
+  ]
 }
