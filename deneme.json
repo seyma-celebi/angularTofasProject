@@ -1,0 +1,20 @@
+{
+    "products": [
+    {
+      "id": 1,
+      "name": "Egea",
+      "price": 1350000,
+      "categoryId": 1,
+      "description": "SEDAN",
+      "imageUrl": "https://otomobil.fiat.com.tr/content/dam/fiat/TR/my-23/tipo/tipo-sedan/coloris/okyanus-mavisi/680x430.png"
+    },
+    {
+      "id": 1,
+      "name": "Egea Cross",
+      "price": 140000,
+      "categoryId": 1,
+      "description": "CROSS LOUNGE",
+      "imageUrl": "https://otomobil.fiat.com.tr/content/dam/fiat/TR/my-23/tipo/tipo-cross/colors/paprika-turuncu/680x430.png"
+    }
+    ]
+}
