@@ -10,7 +10,15 @@
     },
     {
       "id": 1,
-      "name": "Egea Cross",
+      "name": "Linea",
+      "price": 140000,
+      "categoryId": 1,
+      "description": "CROSS LOUNGE",
+      "imageUrl": "https://otomobil.fiat.com.tr/content/dam/fiat/TR/my-23/tipo/tipo-cross/colors/paprika-turuncu/680x430.png"
+    },
+    {
+      "id": 1,
+      "name": "Egea",
       "price": 140000,
       "categoryId": 1,
       "description": "CROSS LOUNGE",
